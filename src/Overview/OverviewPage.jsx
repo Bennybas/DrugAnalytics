@@ -8,7 +8,7 @@ import RegionalMap from './Map'
 
 const OverviewPage = () => {
   return (
-    <div className=' overflow-auto'>
+    <div className='overflow-auto'>
         <OverviewHeader />
         <div className='p-4 ml-4'>
             <div className='flex gap-4 mt-2'>
