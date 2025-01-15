@@ -69,12 +69,12 @@ const Header = () => {
               onClick={() => setActivePage(card.path)}
               className={`flex items-center gap-2 px-4 py-2 rounded-3xl transition-all duration-200 ease-in-out 
                 ${activePage === card.path
-                  ? "bg-[#004567] text-[#f0f3f7]"
+                  ? "bg-[#004567] text-[#f0f3f7] text-md"
                   : "text-[#697280] hover:bg-[#004567]/80 hover:text-[#f0f3f7]"
                 }`}
             >
-              <card.Icon className="text-xl" />
-              <span className="text-sm font-medium">{card.title}</span>
+              <card.Icon className="text-md" />
+              <span className="text-sm">{card.title}</span>
             </button>
           ))}
         </div>

@@ -7,10 +7,10 @@ const Architype = () => {
   useEffect(() => {
     const myChart = echarts.init(chartDom.current);
     const option = {
-      color: ['#c98b27', '#9bc0e2', '#004567', '#8295ae'], // Custom colors
+      color: ['#c98b27', '#9bc0e2', '#004567', '#8295ae'],
       tooltip: {
         trigger: 'item',
-        formatter: '{b}: {c} ({d}%)' // Adding percentage display in the tooltip
+        formatter: '{b}: {c} ({d}%)' 
       },
       series: [
         {
@@ -25,12 +25,24 @@ const Architype = () => {
           },
           label: {
             show: true,
-            position: 'outside', // Adjust label position
-            formatter: '{b}: {d}%',
-            textStyle: {
-              fontSize: 9 // Adjusted for readability
-            }
+            position: 'outside',
+            formatter: (params) => {
+              return `{name|${params.name}}\n{percentage|${params.percent}%}`;
+            },
+            rich: {
+              name: {
+                fontSize: 8,
+                color: '#333', // Text color for name
+                fontWeight: 500,
+              },
+              percentage: {
+                fontSize: 8,
+                color: '#666', 
+                fontWeight: 800,
+              },
+            },
           },
+          
           labelLine: {
             show: true,
             length: 20,
@@ -58,12 +70,12 @@ const Architype = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-[438px] h-56 p-2 ">
+    <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-[395px] h-56 p-1 ">
       <div className="flex flex-col justify-start w-full py-1 ml-4">
         <span className="text-gray-700 text-sm mb-4">Account Archetype (# Acc by Archetype)</span>
       </div>
       {/* ECharts Pie Chart */}
-      <div className='-mr-16' ref={chartDom} style={{ width: '100%', height: '80%' }} />
+      <div  ref={chartDom} style={{ width: '100%', height: '80%' }} />
     </div>
   );
 };

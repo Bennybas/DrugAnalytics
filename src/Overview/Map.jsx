@@ -156,7 +156,7 @@ const RegionalMap = () => {
             </div>
 
             <div className="relative">
-              <ComposableMap projection="geoAlbersUsa" className="w-[800px] h-[350px]">
+              <ComposableMap projection="geoAlbersUsa" className="w-[600px] h-[350px]">
                 <Geographies geography={geoUrl}>
                   {({ geographies }) =>
                     geographies.map((geo) => {
