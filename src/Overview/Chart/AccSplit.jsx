@@ -5,7 +5,11 @@ const AccSplit = () => {
   const chartDom = useRef(null);
 
   useEffect(() => {
-    const myChart = echarts.init(chartDom.current);
+    const myChart = echarts.init(chartDom.current, null, {
+          renderer: 'canvas',
+          devicePixelRatio: window.devicePixelRatio * 2
+        });
+  
     const option = {
       color: ['#447f9c', '#79b8d2'], // Custom colors for the pie chart
       tooltip: {
@@ -28,7 +32,7 @@ const AccSplit = () => {
             position: 'outside', // Label outside
             formatter: '{b}: {d}%', // Percentage display in the label
             textStyle: {
-              fontSize: 10 // Adjusted for clarity
+              fontSize: 10 
             }
           },
           labelLine: {
@@ -44,16 +48,41 @@ const AccSplit = () => {
             { value: 400, name: 'Community' }
           ]
         }
+      ],
+      graphic: [ // Move graphic to the top level
+        {
+          type: 'text',
+          left: 'center',
+          top: '40%',
+          style: {
+            text: 'Total',
+            fontSize: 10,
+            fontWeight: 300,
+            fill: '#0f0f0f', 
+          }
+        },
+        {
+          type: 'text',
+          left: 'center',
+          top: '50%',
+          style: {
+            text: '800', 
+            fontSize: 18,
+            fontWeight: 600,
+            fill: '#c98b27',
+          }
+        }
       ]
     };
-
+  
     myChart.setOption(option);
-
+  
     // Cleanup chart on component unmount
     return () => {
       myChart.dispose();
     };
   }, []);
+  
 
   return (
     <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-[395px] h-56 p-2 " style={{zIndex:2}}>

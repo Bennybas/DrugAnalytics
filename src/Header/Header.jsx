@@ -9,6 +9,7 @@ import OverviewPage from "../Overview/OverviewPage";
 import { LuMonitorCog } from "react-icons/lu";
 import AccTargetting from "../AccTargeting/AccTargetting";
 import AccDeepdive from "../AccDeepdive/AccDeepdive";
+import Hcp_Home from "../HCP_Home/Hcp_Home";
 
 const Header = () => {
   const [activePage, setActivePage] = useState("Overview");
@@ -42,7 +43,7 @@ const Header = () => {
     {
       title: "RAAD Tool",
       Icon: LuMonitorCog,
-      path: "hcp_deepdive",
+      path: "raad_tool",
     }
   ];
 
@@ -54,8 +55,8 @@ const Header = () => {
         return  <AccTargetting />;
       case "acc_deepdive":
         return <AccDeepdive />
-      // case "hcp_homepage":
-      //   return <div className="p-4">Welcome to the HCP Homepage.</div>;
+      case "hcp_homepage":
+        return <Hcp_Home />;
       // case "hcp_deepdive":
       //   return <div className="p-4">This is the HCP Deepdive content.</div>;
       // default:

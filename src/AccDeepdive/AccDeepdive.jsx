@@ -4,6 +4,9 @@ import {MoveUpRight} from 'lucide-react'
 import AccDetails from './AccDetails'
 import Patients from './Patients'
 import TreatedPats from './TreatedPats'
+import HCPsegment from './HCPsegment'
+import Speciality from './Speciality'
+import TableHCP from './TableHCP'
 
 const AccDeepdive = () => {
   return (
@@ -117,6 +120,24 @@ const AccDeepdive = () => {
                 <Patients />
 
                 <TreatedPats />
+            </div>
+
+
+            {/* Third Row */}
+
+            <div className='flex gap-4 mt-6'>
+                <HCPsegment />
+
+                <Speciality />
+
+                <TableHCP />
+
+            </div>
+
+
+            {/* Empty Space */}
+            <div className='flex gap-4 mt-8'>
+
             </div>
 
 
