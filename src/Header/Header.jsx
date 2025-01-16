@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FcBusinessman } from "react-icons/fc";
 import { CiViewTable } from "react-icons/ci";
 import { TbZoomPan } from "react-icons/tb";
@@ -10,9 +10,17 @@ import { LuMonitorCog } from "react-icons/lu";
 import AccTargetting from "../AccTargeting/AccTargetting";
 import AccDeepdive from "../AccDeepdive/AccDeepdive";
 import Hcp_Home from "../HCP_Home/Hcp_Home";
+import HCP_Deepdive from "../HCPDeepdive/HCP_Deepdive";
+import RaadTool from "../RaadTool/RaadTool";
 
 const Header = () => {
-  const [activePage, setActivePage] = useState("Overview");
+  const [activePage, setActivePage] = useState(() => {
+    return localStorage.getItem("activePage") || "Overview";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("activePage", activePage);
+  }, [activePage]);
 
   const cards = [
     {
@@ -44,23 +52,24 @@ const Header = () => {
       title: "RAAD Tool",
       Icon: LuMonitorCog,
       path: "raad_tool",
-    }
+    },
   ];
 
   const renderContent = () => {
     switch (activePage) {
       case "Overview":
-        return <OverviewPage />
+        return <OverviewPage />;
       case "acc_targeting":
-        return  <AccTargetting />;
+        return <AccTargetting />;
       case "acc_deepdive":
-        return <AccDeepdive />
+        return <AccDeepdive />;
       case "hcp_homepage":
         return <Hcp_Home />;
-      // case "hcp_deepdive":
-      //   return <div className="p-4">This is the HCP Deepdive content.</div>;
-      // default:
-      //   return <div className="p-4">Page not found.</div>;
+      case "hcp_deepdive":
+        return <HCP_Deepdive />;
+      case "raad_tool":
+        return <RaadTool />
+      
     }
   };
 
@@ -84,7 +93,7 @@ const Header = () => {
                   }`}
               >
                 <card.Icon className="text-md" />
-                <span className="text-sm" style={{fontSize:'11px'}}>{card.title}</span>
+                <span className="text-sm" style={{ fontSize: '11px' }}>{card.title}</span>
               </button>
             ))}
           </div>
@@ -105,7 +114,6 @@ const Header = () => {
       </div>
       {/* Navigation Content */}
       <main className="mt-4">{renderContent()}</main>
-      
     </div>
   );
 };
