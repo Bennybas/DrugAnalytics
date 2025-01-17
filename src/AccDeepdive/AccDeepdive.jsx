@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import HeaderAccDeepdive from './HeaderAccDeepdive'
 import {MoveUpRight} from 'lucide-react'
 import AccDetails from './AccDetails'
@@ -7,11 +7,21 @@ import TreatedPats from './TreatedPats'
 import HCPsegment from './HCPsegment'
 import Speciality from './Speciality'
 import TableHCP from './TableHCP'
+import metricsData from '../data/metrics.json'
 
-const AccDeepdive = () => {
+const AccDeepdive = ({accountId}) => {
+
+    const [CurrentID, setCurrentID] = useState(accountId || 'SD13445E');
+    
+    const handleAccountChange = (id) => {
+        setCurrentID(id);
+    };
+
+    const accountMetrics = metricsData.find(account => account.AccId === CurrentID);
+
   return (
     <div className='overflow-auto'>
-        <HeaderAccDeepdive />
+        <HeaderAccDeepdive onAccChange={handleAccountChange} />
 
         <div className='p-4 ml-4'>
             <div className='flex gap-3 mt-2'>
@@ -19,10 +29,10 @@ const AccDeepdive = () => {
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">Account Size</span>
                         <div className="flex items-center space-x-1">
-                            <span className="text-[15px] font-medium">200</span>
+                            <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Account Size").value}</span>
                             <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                            <span className="text-green-500 text-[10px]">10.8%</span>
-                            <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                            <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Account Size").growth}</span>
+                            <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Account Size").comparison}</span>
                         </div>
                     </div>
                 </div>
@@ -30,10 +40,10 @@ const AccDeepdive = () => {
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Region</span>
                     <div className="flex items-center space-x-1">
-                        <span className="text-[15px] font-medium">350</span>
+                        <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Region").value}</span>
                         <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                        <span className="text-green-500 text-[10px]">8.4%</span>
-                        <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                        <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Region").growth}</span>
+                        <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Region").comparison}</span>
                     </div>
                 </div>
 
@@ -42,10 +52,10 @@ const AccDeepdive = () => {
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Area</span>
                     <div className="flex items-center space-x-1">
-                        <span className="text-[15px] font-medium">250</span>
+                        <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Area").value}</span>
                         <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                        <span className="text-green-500 text-[10px]">12.5%</span>
-                        <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                        <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Area").growth}</span>
+                        <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Area").comparison}</span>
                     </div>
                 </div>
 
@@ -54,10 +64,10 @@ const AccDeepdive = () => {
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Territory</span>
                     <div className="flex items-center space-x-1">
-                        <span className="text-[15px] font-medium">150</span>
+                        <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Territory").value}</span>
                         <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                        <span className="text-green-500 text-[10px]">8.2%</span>
-                        <span className="text-gray-500 text-[8.5px]">vs last quarter</span>
+                        <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Territory").growth}</span>
+                        <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Territory").comparison}</span>
                     </div>
                 </div>
 
@@ -66,10 +76,10 @@ const AccDeepdive = () => {
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Readiness of GT</span>
                     <div className="flex items-center space-x-1">
-                        <span className="text-[15px] font-medium">250</span>
+                        <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Readiness of GT").value}</span>
                         <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                        <span className="text-green-500 text-[10px]">12.5%</span>
-                        <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                        <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Readiness of GT").growth}</span>
+                        <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Readiness of GT").comparison}</span>
                     </div>
                 </div>
 
@@ -115,7 +125,7 @@ const AccDeepdive = () => {
             {/* Second row */}
 
             <div className='flex gap-4 mt-6'>
-                <AccDetails />
+                <AccDetails accountId={accountId} />
 
                 <Patients />
 

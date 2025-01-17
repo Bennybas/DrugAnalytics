@@ -1,0 +1,321 @@
+[
+    {
+      "AccId": "SD13445E",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 200,
+          "growth": "10.8%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 350,
+          "growth": "8.4%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 250,
+          "growth": "12.5%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 150,
+          "growth": "8.2%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 250,
+          "growth": "12.5%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 500,
+          "growth": "5.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 120,
+          "growth": "5.6%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 50,
+          "growth": "3.5%",
+          "comparison": "vs last month"
+        }
+      ]
+    },
+    {
+      "AccId": "FDGJ456G",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 300,
+          "growth": "15.3%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 450,
+          "growth": "10.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 180,
+          "growth": "9.8%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 230,
+          "growth": "5.4%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 200,
+          "growth": "8.7%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 400,
+          "growth": "6.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 160,
+          "growth": "7.3%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 80,
+          "growth": "4.2%",
+          "comparison": "vs last month"
+        }
+      ]
+    },
+    {
+      "AccId": "SGFDS234",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 250,
+          "growth": "7.5%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 400,
+          "growth": "9.3%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 300,
+          "growth": "6.0%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 180,
+          "growth": "3.6%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 220,
+          "growth": "10.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 450,
+          "growth": "4.9%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 130,
+          "growth": "6.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 60,
+          "growth": "3.8%",
+          "comparison": "vs last month"
+        }
+      ]
+    },
+    {
+      "AccId": "SDFJKG45",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 220,
+          "growth": "9.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 330,
+          "growth": "7.8%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 270,
+          "growth": "10.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 160,
+          "growth": "4.0%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 240,
+          "growth": "9.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 460,
+          "growth": "5.4%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 140,
+          "growth": "6.7%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 70,
+          "growth": "4.1%",
+          "comparison": "vs last month"
+        }
+      ]
+    },
+    {
+      "AccId": "RE343KJD",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 275,
+          "growth": "12.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 380,
+          "growth": "8.6%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 230,
+          "growth": "7.3%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 220,
+          "growth": "6.8%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 210,
+          "growth": "5.5%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 490,
+          "growth": "4.7%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 110,
+          "growth": "6.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 55,
+          "growth": "3.9%",
+          "comparison": "vs last month"
+        }
+      ]
+    },
+    {
+      "AccId": "MNDFG45F",
+      "metrics": [
+        {
+          "name": "Account Size",
+          "value": 275,
+          "growth": "12.5%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Region",
+          "value": 420,
+          "growth": "9.0%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Area",
+          "value": 260,
+          "growth": "8.1%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Territory",
+          "value": 170,
+          "growth": "5.3%",
+          "comparison": "vs last quarter"
+        },
+        {
+          "name": "Readiness of GT",
+          "value": 230,
+          "growth": "10.6%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Neurology pats Annually",
+          "value": 480,
+          "growth": "6.3%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "Archetype",
+          "value": 150,
+          "growth": "7.2%",
+          "comparison": "vs last year"
+        },
+        {
+          "name": "SMA patients Annually",
+          "value": 75,
+          "growth": "4.4%",
+          "comparison": "vs last month"
+        }
+      ]
+    }
+  ]
+  

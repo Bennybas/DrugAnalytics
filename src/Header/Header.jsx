@@ -18,9 +18,16 @@ const Header = () => {
     return localStorage.getItem("activePage") || "Overview";
   });
 
+  const [pageData, setPageData] = useState(null);
+
   useEffect(() => {
     localStorage.setItem("activePage", activePage);
   }, [activePage]);
+
+  const switchPage = (page, data = null) => {
+    setActivePage(page);
+    setPageData(data); 
+  };
 
   const cards = [
     {
@@ -60,9 +67,9 @@ const Header = () => {
       case "Overview":
         return <OverviewPage />;
       case "acc_targeting":
-        return <AccTargetting />;
+        return <AccTargetting setActivePage={switchPage} />;
       case "acc_deepdive":
-        return <AccDeepdive />;
+        return <AccDeepdive accountId={pageData?.accountId} />;
       case "hcp_homepage":
         return <Hcp_Home />;
       case "hcp_deepdive":
