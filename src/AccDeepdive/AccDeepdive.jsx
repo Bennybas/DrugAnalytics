@@ -125,7 +125,7 @@ const AccDeepdive = ({accountId}) => {
             {/* Second row */}
 
             <div className='flex gap-4 mt-6'>
-                <AccDetails accountId={accountId} />
+                <AccDetails accountId={CurrentID} />
 
                 <Patients />
 
