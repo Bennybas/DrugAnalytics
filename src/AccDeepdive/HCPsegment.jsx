@@ -1,20 +1,15 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import metricsData from '../data/metrics.json'
 
-const data = [
-  { name: 'HCP1', value: 50 },
-  { name: 'HCP2', value: 25 },
-  { name: 'HCP3', value: 35 },
-  { name: 'HCP4', value: 80 },
-];
-
-const HCPsegment = () => {
+const HCPsegment = ({accountId}) => {
+  const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
     <div className="flex flex-col justify-between border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA by HCP Segment</span>
       <ResponsiveContainer width="100%" height="100%" >
         <BarChart
-          data={data}
+          data={accountMetrics.hcp_segments}
           margin={{
             top: 20,
             right: 10,
@@ -27,7 +22,7 @@ const HCPsegment = () => {
             dataKey="name"
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#666' }}
+            tick={{ fontSize: 9, fill: '#666' }}
           />
           <YAxis
             allowDecimals={false}

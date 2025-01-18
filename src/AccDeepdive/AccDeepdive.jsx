@@ -21,7 +21,7 @@ const AccDeepdive = ({accountId}) => {
 
   return (
     <div className='overflow-auto'>
-        <HeaderAccDeepdive onAccChange={handleAccountChange} />
+        <HeaderAccDeepdive onAccChange={handleAccountChange} accountId={CurrentID}/>
 
         <div className='p-4 ml-4'>
             <div className='flex gap-3 mt-2'>
@@ -88,10 +88,10 @@ const AccDeepdive = ({accountId}) => {
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">Neurology pats Anually</span>
                         <div className="flex items-center space-x-1">
-                            <span className="text-[15px] font-medium">500</span>
+                            <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Neurology pats Annually").value}</span>
                             <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                            <span className="text-green-500 text-[10px]">5.2%</span>
-                            <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                            <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Neurology pats Annually").growth}</span>
+                            <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Neurology pats Annually").comparison}</span>
                         </div>
                     </div>
                 </div>
@@ -99,10 +99,10 @@ const AccDeepdive = ({accountId}) => {
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Archetype</span>
                     <div className="flex items-center space-x-1">
-                        <span className="text-[15px] font-medium">120</span>
+                        <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Archetype").value}</span>
                         <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                        <span className="text-green-500 text-[10px]">5.6%</span>
-                        <span className="text-gray-500 text-[8.5px]">vs last year</span>
+                        <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "Archetype").growth}</span>
+                        <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "Archetype").comparison}</span>
                     </div>
                 </div>
 
@@ -111,10 +111,10 @@ const AccDeepdive = ({accountId}) => {
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">SMA patients Annually</span>
                         <div className="flex items-center space-x-1">
-                            <span className="text-[15px] font-medium">50</span>
+                            <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "SMA patients Annually").value}</span>
                             <MoveUpRight className="text-green-500" style={{ width: '10px', height: '10px' }} />
-                            <span className="text-green-500 text-[10px]">3.5%</span>
-                            <span className="text-gray-500 text-[8.5px]">vs last month</span>
+                            <span className="text-green-500 text-[10px]">{accountMetrics.metrics.find(m => m.name === "SMA patients Annually").growth}</span>
+                            <span className="text-gray-500 text-[8.5px]">{accountMetrics.metrics.find(m => m.name === "SMA patients Annually").comparison}</span>
                         </div>
                     </div>
                 </div>
@@ -127,18 +127,18 @@ const AccDeepdive = ({accountId}) => {
             <div className='flex gap-4 mt-6'>
                 <AccDetails accountId={CurrentID} />
 
-                <Patients />
+                <Patients accountId={CurrentID}/>
 
-                <TreatedPats />
+                <TreatedPats  accountId={CurrentID}/>
             </div>
 
 
             {/* Third Row */}
 
             <div className='flex gap-4 mt-6'>
-                <HCPsegment />
+                <HCPsegment accountId={CurrentID} />
 
-                <Speciality />
+                <Speciality accountId={CurrentID}/>
 
                 <TableHCP />
 

@@ -50,7 +50,32 @@
           "growth": "3.5%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+        { "year": "2021", "value": 20 },
+        { "year": "2022", "value": 10 },
+        { "year": "2023", "value": 15 },
+        { "year": "2024", "value": 30 }
+      ],
+      "treated_pats": [
+  { "name": "Spinraza", "value": 30 },
+  { "name": "Evrysdi", "value": 15 },
+  { "name": "Zolgensma", "value": 20 }
+],
+"hcp_segments": [
+  { "name": "Dr. Smith", "value": 50 },
+  { "name": "Dr. Johnson", "value": 25 },
+  { "name": "Dr. Williams", "value": 35 },
+  { "name": "Dr. Brown", "value": 80 }
+],
+"speciality": [
+  { "value": "450", "name": "Specialty 1" },
+  { "value": "380", "name": "Specialty 2" },
+  { "value": "325", "name": "Specialty 3" },
+  { "value": "490", "name": "Specialty 4" }
+]
+
+
     },
     {
       "AccId": "FDGJ456G",
@@ -103,7 +128,33 @@
           "growth": "4.2%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+        { "year": "2021", "value": 30 },
+        { "year": "2022", "value": 20 },
+        { "year": "2023", "value": 25 },
+        { "year": "2024", "value": 40 }
+      ],
+      "treated_pats": [
+  { "name": "Spinraza", "value": 18 },
+  { "name": "Evrysdi", "value": 16 },
+  { "name": "Zolgensma", "value": 26 }
+],
+"hcp_segments": [
+  { "name": "Dr. Miller", "value": 40 },
+  { "name": "Dr. Davis", "value": 30 },
+  { "name": "Dr. Garcia", "value": 60 },
+  { "name": "Dr. Rodriguez", "value": 45 }
+],
+"speciality": [
+  { "value": "400", "name": "Specialty 1" },
+  { "value": "350", "name": "Specialty 2" },
+  { "value": "310", "name": "Specialty 3" },
+  { "value": "460", "name": "Specialty 4" }
+]
+
+
+
     },
     {
       "AccId": "SGFDS234",
@@ -156,7 +207,33 @@
           "growth": "3.8%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+  { "year": "2021", "value": 18 },
+  { "year": "2022", "value": 12 },
+  { "year": "2023", "value": 14 },
+  { "year": "2024", "value": 28 }
+],
+"treated_pats": [
+  { "name": "Spinraza", "value": 25 },
+  { "name": "Evrysdi", "value": 22 },
+  { "name": "Zolgensma", "value": 30 }
+],
+"hcp_segments": [
+  { "name": "Dr. Martinez", "value": 55 },
+  { "name": "Dr. Hernandez", "value": 20 },
+  { "name": "Dr. Lopez", "value": 50 },
+  { "name": "Dr. Gonzalez", "value": 70 }
+],
+"speciality": [
+  { "value": "500", "name": "Specialty 1" },
+  { "value": "375", "name": "Specialty 2" },
+  { "value": "330", "name": "Specialty 3" },
+  { "value": "470", "name": "Specialty 4" }
+]
+
+
+
     },
     {
       "AccId": "SDFJKG45",
@@ -209,7 +286,34 @@
           "growth": "4.1%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+  { "year": "2021", "value": 22 },
+  { "year": "2022", "value": 16 },
+  { "year": "2023", "value": 19 },
+  { "year": "2024", "value": 33 }
+],
+"treated_pats": [
+  { "name": "Spinraza", "value": 20 },
+  { "name": "Evrysdi", "value": 24 },
+  { "name": "Zolgensma", "value": 16 }
+],
+"hcp_segments": [
+  { "name": "Dr. Wilson", "value": 65 },
+  { "name": "Dr. Moore", "value": 35 },
+  { "name": "Dr. Taylor", "value": 40 },
+  { "name": "Dr. Anderson", "value": 55 }
+],
+"speciality": [
+  { "value": "420", "name": "Specialty 1" },
+  { "value": "390", "name": "Specialty 2" },
+  { "value": "340", "name": "Specialty 3" },
+  { "value": "480", "name": "Specialty 4" }
+]
+
+
+
+
     },
     {
       "AccId": "RE343KJD",
@@ -262,7 +366,34 @@
           "growth": "3.9%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+        { "year": "2021", "value": 35 },
+        { "year": "2022", "value": 25 },
+        { "year": "2023", "value": 30 },
+        { "year": "2024", "value": 45 }
+      ],
+      "treated_pats": [
+  { "name": "Spinraza", "value": 12 },
+  { "name": "Evrysdi", "value": 18 },
+  { "name": "Zolgensma", "value": 22 }
+],
+"hcp_segments": [
+  { "name": "Dr. Thomas", "value": 30 },
+  { "name": "Dr. Jackson", "value": 45 },
+  { "name": "Dr. White", "value": 50 },
+  { "name": "Dr. Harris", "value": 70 }
+],
+"speciality": [
+  { "value": "480", "name": "Specialty 1" },
+  { "value": "360", "name": "Specialty 2" },
+  { "value": "335", "name": "Specialty 3" },
+  { "value": "460", "name": "Specialty 4" }
+]
+
+
+      
+
     },
     {
       "AccId": "MNDFG45F",
@@ -315,7 +446,33 @@
           "growth": "4.4%",
           "comparison": "vs last month"
         }
-      ]
+      ],
+      "pats_data": [
+  { "year": "2021", "value": 28 },
+  { "year": "2022", "value": 18 },
+  { "year": "2023", "value": 24 },
+  { "year": "2024", "value": 38 }
+],
+"treated_pats": [
+  { "name": "Spinraza", "value": 28 },
+  { "name": "Evrysdi", "value": 14 },
+  { "name": "Zolgensma", "value": 20 }
+],
+"hcp_segments": [
+  { "name": "Dr. Martin", "value": 40 },
+  { "name": "Dr. Thompson", "value": 25 },
+  { "name": "Dr. Garcia", "value": 55 },
+  { "name": "Dr. Clark", "value": 65 }
+],
+"speciality": [
+  { "value": "460", "name": "Specialty 1" },
+  { "value": "380", "name": "Specialty 2" },
+  { "value": "320", "name": "Specialty 3" },
+  { "value": "500", "name": "Specialty 4" }
+]
+
+
+
     }
   ]
   

@@ -8,21 +8,18 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import metricsData from '../data/metrics.json'
 
-const data = [
-  { year: '2021', value: 20 },
-  { year: '2022', value: 10 },
-  { year: '2023', value: 15 },
-  { year: '2024', value: 30 },
-];
 
-const Patients = () => {
+const Patients = ({accountId}) => {
+
+  const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
     <div className="flex flex-col border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA Patients</span>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
-          data={data}
+          data={accountMetrics.pats_data}
           margin={{ top: 20, right: 20, bottom: 2, left: 0 }}
         >
           <CartesianGrid stroke="#f0f0f0" vertical={false} />

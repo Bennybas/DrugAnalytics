@@ -1,18 +1,16 @@
 import React from 'react';
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import metricsData from '../data/metrics.json'
 
-const data = [
-  { name: 'Spinraza', value: 18 },
-  { name: 'Evrysdi', value: 32 },
-  { name: 'Zolgensma', value: 28 },
-];
 
-const TreatedPats = () => {
+
+const TreatedPats = ({accountId}) => {
+  const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
     <div className="flex flex-col border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA Treated Patients</span>
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} margin={{ top: 20, right: 20, left: 0 }}>
+        <BarChart data={accountMetrics.treated_pats} margin={{ top: 20, right: 20, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis 
             dataKey="name" 

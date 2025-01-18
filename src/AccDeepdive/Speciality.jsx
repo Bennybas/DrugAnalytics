@@ -1,17 +1,24 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
+import metricsData from '../data/metrics.json';
 
-const Specialty = () => {
+const Specialty = ({accountId}) => {
   const chartDom = useRef(null);
+  const accountMetrics = metricsData.find(account => account.AccId === accountId);
 
   useEffect(() => {
+    if (!accountMetrics || !chartDom.current) return;
+
     const myChart = echarts.init(chartDom.current, null, {
       renderer: 'canvas',
-      devicePixelRatio: window.devicePixelRatio * 2 // Increase resolution
+      devicePixelRatio: window.devicePixelRatio * 2 
     });
   
+    const totalSpecialty = accountMetrics.speciality.reduce((sum, item) => 
+      sum + parseInt(item.value), 0);
+
     const option = {
-        color: ['#c98b27', '#9bc0e2', '#004567', '#8295ae'], // Custom colors for each specialty
+      color: ['#c98b27', '#9bc0e2', '#004567', '#8295ae'], 
       tooltip: {
         trigger: 'item',
         formatter: '{b}: {c} ({d}%)'
@@ -46,12 +53,7 @@ const Specialty = () => {
               type: 'solid'
             }
           },
-          data: [
-            { value: 381.25, name: 'Specialty 1' },
-            { value: 381.25, name: 'Specialty 2' },
-            { value: 305, name: 'Specialty 3' },
-            { value: 457.5, name: 'Specialty 4' }
-          ]
+          data: accountMetrics.speciality
         }
       ],
       graphic: [
@@ -71,7 +73,7 @@ const Specialty = () => {
           left: 'center',
           top: '52%',
           style: {
-            text: '1525',
+            text: totalSpecialty.toString(),
             fontSize: 20,
             fontWeight: 600,
             fill: '#333'
@@ -82,19 +84,17 @@ const Specialty = () => {
   
     myChart.setOption(option);
 
-    // Handle window resize
     const handleResize = () => {
       myChart.resize();
     };
     window.addEventListener('resize', handleResize);
   
-    // Cleanup
     return () => {
       myChart.dispose();
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
-
+  }, [accountMetrics]);
+  
   return (
     <div className="flex flex-col justify-between border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA Pats by Specialty</span>
