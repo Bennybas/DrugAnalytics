@@ -1,5 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from 'recharts';
+import metricsData from '../data/hcp_data.json'
 
 const data = [
   { name: 'Age <2', Zolgensma: 50, Evrysdi: 25, Spinraza: 25 },
@@ -8,12 +9,13 @@ const data = [
   { name: 'Age >40', Zolgensma: 10, Evrysdi: 20, Spinraza: 70 },
 ];
 
-const AgevsProduct = () => {
+const AgevsProduct = ({Hcp_Id}) => {
+  const HcpMetrics = metricsData.find(HCP => HCP.HCP_id === Hcp_Id);
   return (
     <div className="flex flex-col border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">Age vs Product Distribution</span>
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} margin={{ top: 20, right: 20, left: 0 }}>
+        <BarChart data={HcpMetrics.age_vs_prod} margin={{ top: 20, right: 20, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis 
             dataKey="name" 

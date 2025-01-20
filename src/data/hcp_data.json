@@ -1,6 +1,6 @@
 [
     {
-      "AccId": "SD13445E",
+      "HCP_id": "SD13445E",
       "metrics": [
         {
           "name": "Account Size",
@@ -51,9 +51,9 @@
           "comparison": "vs last month"
         },
         {
-          "name":"account_details",
+          "name":"HCP_details",
           "ID":"SD13445E",
-          "acc_name":"Nova Lake",
+          "HCP_Name":"Dr.Gustavo",
           "state":"Florida",
           "zip":"19701"
         }
@@ -64,28 +64,18 @@
         { "year": "2023", "value": 15 },
         { "year": "2024", "value": 30 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 30 },
-        { "name": "Evrysdi", "value": 15 },
-        { "name": "Zolgensma", "value": 20 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Smith", "value": 50 },
-        { "name": "Dr. Johnson", "value": 25 },
-        { "name": "Dr. Williams", "value": 35 },
-        { "name": "Dr. Brown", "value": 80 }
-      ],
-      "speciality": [
-        { "value": "450", "name": "Specialty 1" },
-        { "value": "380", "name": "Specialty 2" },
-        { "value": "325", "name": "Specialty 3" },
-        { "value": "490", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 60, "Evrysdi": 20, "Spinraza": 20 },
+        { "name": "Age 2-17", "Zolgensma": 25, "Evrysdi": 40, "Spinraza": 35 },
+        { "name": "Age 18-40", "Zolgensma": 15, "Evrysdi": 45, "Spinraza": 40 },
+        { "name": "Age >40", "Zolgensma": 8, "Evrysdi": 22, "Spinraza": 70 }
       ]
+
 
 
     },
     {
-      "AccId": "FDGJ456G",
+      "HCP_id": "FDGJ456G",
       "metrics": [
         {
           "name": "Account Size",
@@ -136,9 +126,9 @@
           "comparison": "vs last month"
         },
         {
-          "name": "account_details",
+          "name": "HCP_details",
           "ID": "FDGJ456G",
-          "acc_name": "Pinewood Healthcare",
+          "HCP_Name": "Dr.Jordyn Bergson",
           "state": "California",
           "zip": "90210"
         }
@@ -149,29 +139,19 @@
         { "year": "2023", "value": 25 },
         { "year": "2024", "value": 40 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 18 },
-        { "name": "Evrysdi", "value": 16 },
-        { "name": "Zolgensma", "value": 26 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Miller", "value": 40 },
-        { "name": "Dr. Davis", "value": 30 },
-        { "name": "Dr. Garcia", "value": 60 },
-        { "name": "Dr. Rodriguez", "value": 45 }
-      ],
-      "speciality": [
-        { "value": "400", "name": "Specialty 1" },
-        { "value": "350", "name": "Specialty 2" },
-        { "value": "310", "name": "Specialty 3" },
-        { "value": "460", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 55, "Evrysdi": 30, "Spinraza": 15 },
+        { "name": "Age 2-17", "Zolgensma": 35, "Evrysdi": 30, "Spinraza": 35 },
+        { "name": "Age 18-40", "Zolgensma": 25, "Evrysdi": 35, "Spinraza": 40 },
+        { "name": "Age >40", "Zolgensma": 12, "Evrysdi": 18, "Spinraza": 70 }
       ]
+
 
 
 
     },
     {
-      "AccId": "SGFDS234",
+      "HCP_id": "SGFDS234",
       "metrics": [
         {
           "name": "Account Size",
@@ -222,9 +202,9 @@
           "comparison": "vs last month"
         },
         {
-          "name": "account_details",
+          "name": "HCP_details",
           "ID": "SGFDS234",
-          "acc_name": "Riverstone Medical",
+          "HCP_Name": "Dr.Omar Stanton",
           "state": "Texas",
           "zip": "73301"
         }
@@ -235,29 +215,19 @@
         { "year": "2023", "value": 14 },
         { "year": "2024", "value": 28 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 25 },
-        { "name": "Evrysdi", "value": 22 },
-        { "name": "Zolgensma", "value": 30 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Martinez", "value": 55 },
-        { "name": "Dr. Hernandez", "value": 20 },
-        { "name": "Dr. Lopez", "value": 50 },
-        { "name": "Dr. Gonzalez", "value": 70 }
-      ],
-      "speciality": [
-        { "value": "500", "name": "Specialty 1" },
-        { "value": "375", "name": "Specialty 2" },
-        { "value": "330", "name": "Specialty 3" },
-        { "value": "470", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 65, "Evrysdi": 15, "Spinraza": 20 },
+        { "name": "Age 2-17", "Zolgensma": 30, "Evrysdi": 30, "Spinraza": 40 },
+        { "name": "Age 18-40", "Zolgensma": 20, "Evrysdi": 30, "Spinraza": 50 },
+        { "name": "Age >40", "Zolgensma": 10, "Evrysdi": 20, "Spinraza": 70 }
       ]
+
 
 
 
     },
     {
-      "AccId": "SDFJKG45",
+      "HCP_id": "SDFJKG45",
       "metrics": [
         {
           "name": "Account Size",
@@ -308,9 +278,9 @@
           "comparison": "vs last month"
         },
         {
-          "name": "account_details",
+          "name": "HCP_details",
           "ID": "SDFJKG45",
-          "acc_name": "Lakeside Clinic",
+          "HCP_Name": "Dr.Roger Saris",
           "state": "New York",
           "zip": "10001"
         }
@@ -321,27 +291,17 @@
         { "year": "2023", "value": 19 },
         { "year": "2024", "value": 33 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 20 },
-        { "name": "Evrysdi", "value": 24 },
-        { "name": "Zolgensma", "value": 16 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Wilson", "value": 65 },
-        { "name": "Dr. Moore", "value": 35 },
-        { "name": "Dr. Taylor", "value": 40 },
-        { "name": "Dr. Anderson", "value": 55 }
-      ],
-      "speciality": [
-        { "value": "420", "name": "Specialty 1" },
-        { "value": "390", "name": "Specialty 2" },
-        { "value": "340", "name": "Specialty 3" },
-        { "value": "480", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 50, "Evrysdi": 30, "Spinraza": 20 },
+        { "name": "Age 2-17", "Zolgensma": 40, "Evrysdi": 30, "Spinraza": 30 },
+        { "name": "Age 18-40", "Zolgensma": 15, "Evrysdi": 50, "Spinraza": 35 },
+        { "name": "Age >40", "Zolgensma": 5, "Evrysdi": 25, "Spinraza": 70 }
       ]
+
 
     },
     {
-      "AccId": "RE343KJD",
+      "HCP_id": "RE343KJD",
       "metrics": [
         {
           "name": "Account Size",
@@ -392,9 +352,9 @@
           "comparison": "vs last month"
         },
         {
-          "name": "account_details",
+          "name": "HCP_details",
           "ID": "RE343KJD",
-          "acc_name": "Mountain View",
+          "HCP_Name": "Dr.Aspen Lubin",
           "state": "Colorado",
           "zip": "80202"
         }
@@ -405,30 +365,16 @@
         { "year": "2023", "value": 30 },
         { "year": "2024", "value": 45 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 12 },
-        { "name": "Evrysdi", "value": 18 },
-        { "name": "Zolgensma", "value": 22 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Thomas", "value": 30 },
-        { "name": "Dr. Jackson", "value": 45 },
-        { "name": "Dr. White", "value": 50 },
-        { "name": "Dr. Harris", "value": 70 }
-      ],
-      "speciality": [
-        { "value": "480", "name": "Specialty 1" },
-        { "value": "360", "name": "Specialty 2" },
-        { "value": "335", "name": "Specialty 3" },
-        { "value": "460", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 70, "Evrysdi": 10, "Spinraza": 20 },
+        { "name": "Age 2-17", "Zolgensma": 35, "Evrysdi": 35, "Spinraza": 30 },
+        { "name": "Age 18-40", "Zolgensma": 25, "Evrysdi": 30, "Spinraza": 45 },
+        { "name": "Age >40", "Zolgensma": 8, "Evrysdi": 22, "Spinraza": 70 }
       ]
-
-
-      
 
     },
     {
-      "AccId": "MNDFG45F",
+      "HCP_id": "MNDFG45F",
       "metrics": [
         {
           "name": "Account Size",
@@ -479,9 +425,9 @@
           "comparison": "vs last month"
         },
         {
-          "name": "account_details",
+          "name": "HCP_details",
           "ID": "MNDFG45F",
-          "acc_name": "Sunrise Medical Center",
+          "HCP_Name": "Dr.Lisa Taylor",
           "state": "Arizona",
           "zip": "85001"
         }
@@ -492,23 +438,13 @@
         { "year": "2023", "value": 24 },
         { "year": "2024", "value": 38 }
       ],
-      "treated_pats": [
-        { "name": "Spinraza", "value": 28 },
-        { "name": "Evrysdi", "value": 14 },
-        { "name": "Zolgensma", "value": 20 }
-      ],
-      "hcp_segments": [
-        { "name": "Dr. Martin", "value": 40 },
-        { "name": "Dr. Thompson", "value": 25 },
-        { "name": "Dr. Garcia", "value": 55 },
-        { "name": "Dr. Clark", "value": 65 }
-      ],
-      "speciality": [
-        { "value": "460", "name": "Specialty 1" },
-        { "value": "380", "name": "Specialty 2" },
-        { "value": "320", "name": "Specialty 3" },
-        { "value": "500", "name": "Specialty 4" }
+      "age_vs_prod": [
+        { "name": "Age <2", "Zolgensma": 50, "Evrysdi": 70, "Spinraza": 40 },
+        { "name": "Age 2-17", "Zolgensma": 35, "Evrysdi": 35, "Spinraza": 30 },
+        { "name": "Age 18-40", "Zolgensma": 25, "Evrysdi": 60, "Spinraza": 45 },
+        { "name": "Age >40", "Zolgensma": 8, "Evrysdi": 40, "Spinraza": 70 }
       ]
+
     }
   ]
   

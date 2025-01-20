@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Table_HCPHome = () => {
+const Table_HCPHome = ({setActivePage }) => {
     const tableData = [
         {
           "HCP ID": "SD13445E",
@@ -57,6 +57,10 @@ const Table_HCPHome = () => {
           "HCP Segment": "Primary Care"
         }
       ];
+
+      const handleRowClick = (hcp_id) => {
+        setActivePage("hcp_deepdive", { hcp_id }); 
+      };
       
   return (
     <div className="w-full px-2 py-4">
@@ -75,7 +79,12 @@ const Table_HCPHome = () => {
             <tbody>
                 {tableData.map((row, index) => (
                     <tr key={index}>
-                        <td className="p-2 text-[10px] font-bold text-left border border-gray-200 bg-[#fcf2e1]" >{row['HCP ID']}</td>
+                        <td onClick={() => handleRowClick(row['HCP ID'])} className={`p-2 text-[10px] font-bold text-left border border-gray-200 bg-[#dce4e8]/40 cursor-pointer group relative hover:text-[10.5px]`}>
+                                {row['HCP ID']}
+                                <span className="absolute -top-2 left-8 translate-x-1/2 top-full text-[9px] bg-[#d4ae33] text-white rounded px-2 py-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                    Go deep dive
+                                </span>
+                            </td>
                         <td className="p-2 text-[10px]  text-left border border-gray-200 bg-[#dce4e8]/40" >{row['HCP Name']}</td>
                         <td className="p-2 text-[10px]  text-left border border-gray-200 bg-[#dce4e8]/40" >{row['HCP Archetype']}</td>
                         <td className="p-2 text-[10px]  text-left border border-gray-200 bg-[#dce4e8]/40" >{row['No. of Patients']}</td>

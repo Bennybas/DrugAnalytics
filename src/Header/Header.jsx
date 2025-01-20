@@ -71,9 +71,9 @@ const Header = () => {
       case "acc_deepdive":
         return <AccDeepdive accountId={pageData?.accountId} />;
       case "hcp_homepage":
-        return <Hcp_Home />;
+        return <Hcp_Home setActivePage={switchPage} />;
       case "hcp_deepdive":
-        return <HCP_Deepdive />;
+        return <HCP_Deepdive Hcp_Id={pageData?.hcp_id}/>;
       case "raad_tool":
         return <RaadTool />
       

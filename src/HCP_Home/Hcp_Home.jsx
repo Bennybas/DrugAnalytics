@@ -3,7 +3,7 @@ import Header_HCPhome from './Header_HCPhome'
 import {MoveUpRight} from 'lucide-react'
 import Table_HCPHome from './Table_HCPHome'
 
-const Hcp_Home = () => {
+const Hcp_Home = ({setActivePage }) => {
   return (
     <div>
         <Header_HCPhome />
@@ -76,7 +76,7 @@ const Hcp_Home = () => {
 
             {/* Table */}
             <div className='mt-4'>
-                <Table_HCPHome />
+                <Table_HCPHome setActivePage= {setActivePage }/>
 
             </div>
         </div>

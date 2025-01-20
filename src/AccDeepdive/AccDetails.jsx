@@ -1,6 +1,9 @@
 import React from 'react'
+import metricsData from '../data/metrics.json';
 
 const AccDetails = ({accountId}) => {
+
+    const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
     
     <div className="flex items-center justify-between border border-gray-300 rounded-xl w-[395px] h-60 px-2 py-2">
@@ -10,7 +13,7 @@ const AccDetails = ({accountId}) => {
                 <div className='flex border justify-between items-center border-gray-300 rounded-lg h-[40px] w-44 px-3 py-2'>
                     <span className="text-gray-700 text-[11px]" >Acc ID</span>
                         
-                    <span className="text-black text-[11px] font-medium" >{accountId ? accountId: 'SD13445E' }</span>
+                    <span className="text-black text-[11px] font-medium" >{accountId}</span>
                 </div>
                 <div className='flex border justify-between items-center border-gray-300 rounded-lg h-[40px] w-44 px-2 py-2'>
                     <span className="text-gray-700 text-[11px]" >City</span>
@@ -23,12 +26,12 @@ const AccDetails = ({accountId}) => {
                 <div className='flex border justify-between items-center border-gray-300 rounded-lg h-[40px] w-44 px-3 py-2'>
                     <span className="text-gray-700 text-[11px]" >Acc Name</span>
                         
-                    <span className="text-black text-[11px] font-medium" >Nova Loke</span>
+                    <span className="text-black text-[11px] font-medium" >{accountMetrics.metrics.find(m=>m.name=="account_details").acc_name}</span>
                 </div>
                 <div className='flex border justify-between items-center border-gray-300 rounded-lg h-[40px] w-44 px-2 py-2'>
                     <span className="text-gray-700 text-[11px]" >State</span>
                         
-                    <span className="text-black text-[11px] font-medium" >Florida</span>
+                    <span className="text-black text-[11px] font-medium" >{accountMetrics.metrics.find(m=>m.name=="account_details").state}</span>
                 </div>
 
             </div>
@@ -41,7 +44,7 @@ const AccDetails = ({accountId}) => {
                 <div className='flex border justify-between items-center border-gray-300 rounded-lg h-[40px] w-44 px-2 py-2'>
                     <span className="text-gray-700 text-[11px]" >ZIP</span>
                         
-                    <span className="text-black text-[11px] font-medium" >19701</span>
+                    <span className="text-black text-[11px] font-medium" >{accountMetrics.metrics.find(m=>m.name=="account_details").zip}</span>
                 </div>
 
             </div>
