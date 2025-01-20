@@ -1,0 +1,260 @@
+[
+    {
+       "AccId": "SD13445E",
+       "region": "Texas",
+       "Territory": "Urban",
+       "Area": "North",
+       "340_b_site": "Site-3",
+       "top_n": "Top-5",
+       "no_of_prescribers": [
+            {
+            "value": 200,
+            "growth": "10.8%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 20150,
+            "growth": "4%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 1525,
+            "growth": "10%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 456,
+            "growth": "12%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "73%",
+            "growth": "10.8%",
+            "comparison": "vs last year"
+        }
+       ]
+    },
+    {
+       "AccId": "SD24567F",
+       "region": "California",
+       "Territory": "Suburban",
+       "Area": "West",
+       "340_b_site": "Site-1",
+       "top_n": "Top-10",
+       "no_of_prescribers": [
+            {
+            "value": 150,
+            "growth": "5.2%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 18000,
+            "growth": "3.5%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 1200,
+            "growth": "8%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 300,
+            "growth": "9%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "68%",
+            "growth": "8.4%",
+            "comparison": "vs last year"
+        }
+       ]
+    },
+    {
+       "AccId": "SD35678G",
+       "region": "New York",
+       "Territory": "Urban",
+       "Area": "East",
+       "340_b_site": "Site-2",
+       "top_n": "Top-20",
+       "no_of_prescribers": [
+            {
+            "value": 300,
+            "growth": "12.3%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 25000,
+            "growth": "5%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 2000,
+            "growth": "15%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 500,
+            "growth": "10%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "75%",
+            "growth": "9%",
+            "comparison": "vs last year"
+        }
+       ]
+    },
+    {
+       "AccId": "SD46789H",
+       "region": "Florida",
+       "Territory": "Rural",
+       "Area": "South",
+       "340_b_site": "Site-3",
+       "top_n": "Top-5",
+       "no_of_prescribers": [
+            {
+            "value": 100,
+            "growth": "6.8%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 15000,
+            "growth": "2%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 1000,
+            "growth": "5%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 250,
+            "growth": "6%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "65%",
+            "growth": "7.5%",
+            "comparison": "vs last year"
+        }
+       ]
+    },
+    {
+       "AccId": "SD57890I",
+       "region": "Texas",
+       "Territory": "Rural",
+       "Area": "West",
+       "340_b_site": "Site-1",
+       "top_n": "Top-10",
+       "no_of_prescribers": [
+            {
+            "value": 175,
+            "growth": "7.5%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 17000,
+            "growth": "3%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 1100,
+            "growth": "7%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 400,
+            "growth": "8%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "70%",
+            "growth": "8.2%",
+            "comparison": "vs last year"
+        }
+       ]
+    },
+    {
+       "AccId": "SD68901J",
+       "region": "California",
+       "Territory": "Suburban",
+       "Area": "North",
+       "340_b_site": "Site-2",
+       "top_n": "Top-20",
+       "no_of_prescribers": [
+            {
+            "value": 225,
+            "growth": "9.5%",
+            "comparison": "vs last year"
+            }
+       ],
+       "Total_patients": [
+        {
+            "value": 22000,
+            "growth": "4.2%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Treatment_centers": [
+        {
+            "value": 1400,
+            "growth": "10%",
+            "comparison": "vs last year"
+        }
+       ],
+       "Active_Referals": [
+        {
+            "value": 350,
+            "growth": "7%",
+            "comparison": "vs last month"
+        }
+       ],
+       "Conversion_rate": [
+        {
+            "value": "72%",
+            "growth": "9%",
+            "comparison": "vs last year"
+        }
+       ]
+    }
+]

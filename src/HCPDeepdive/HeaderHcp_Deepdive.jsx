@@ -54,7 +54,7 @@ const HeaderHcp_Deepdive = ({onAccChange,Hcp_Id}) => {
                   onClick={toggleDropdown}
                   className="flex items-center justify-between px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm cursor-pointer hover:shadow-md transition-all duration-150 ease-in-out min-w-[120px]"
                 >
-                  <span className="font-medium text-gray-700 text-sm">
+                  <span className="font-small text-gray-700 text-sm"style={{fontSize: '12px'}}>
                     {selectedAccount || filter.label}
                   </span>
                   <ChevronDown 
