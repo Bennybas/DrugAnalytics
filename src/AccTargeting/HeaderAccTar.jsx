@@ -11,10 +11,10 @@ const HeaderAccTar = () => {
       id: 'account_id',
       label: 'Account ID',
       options: [
-        { value: 'acc_001', label: 'ACC-2024-001' },
-        { value: 'acc_002', label: 'ACC-2024-002' },
-        { value: 'acc_003', label: 'ACC-2024-003' },
-        { value: 'acc_004', label: 'ACC-2024-004' },
+        { value: 'acc_001', label: 'SD13445E' },
+        { value: 'acc_002', label: 'FDGJ456G' },
+        { value: 'acc_003', label: 'SGFDS234' },
+        { value:'acc_004' , label:'SDFJKG45'}
       ]
     },
     {
