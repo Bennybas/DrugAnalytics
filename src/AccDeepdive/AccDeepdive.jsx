@@ -25,7 +25,7 @@ const AccDeepdive = ({accountId}) => {
 
         <div className='p-4 ml-4'>
             <div className='flex gap-3 mt-2'>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">Account Size</span>
                         <div className="flex items-center space-x-1">
@@ -36,7 +36,7 @@ const AccDeepdive = ({accountId}) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Region</span>
                     <div className="flex items-center space-x-1">
@@ -48,7 +48,7 @@ const AccDeepdive = ({accountId}) => {
                 </div>
 
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Area</span>
                     <div className="flex items-center space-x-1">
@@ -60,7 +60,7 @@ const AccDeepdive = ({accountId}) => {
                 </div>
 
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Territory</span>
                     <div className="flex items-center space-x-1">
@@ -72,7 +72,7 @@ const AccDeepdive = ({accountId}) => {
                 </div>
 
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Readiness of GT</span>
                     <div className="flex items-center space-x-1">
@@ -84,7 +84,7 @@ const AccDeepdive = ({accountId}) => {
                 </div>
 
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">Neurology pats Anually</span>
                         <div className="flex items-center space-x-1">
@@ -95,7 +95,7 @@ const AccDeepdive = ({accountId}) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                 <div className="flex flex-col justify-between h-full w-full ml-1">
                     <span className="text-gray-700 text-[12px]">Archetype</span>
                     <div className="flex items-center space-x-1">
@@ -107,7 +107,7 @@ const AccDeepdive = ({accountId}) => {
                 </div>
 
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-44 h-24 px-2 py-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
                     <div className="flex flex-col justify-between h-full w-full ml-1">
                         <span className="text-gray-700 text-[12px]">SMA patients Annually</span>
                         <div className="flex items-center space-x-1">

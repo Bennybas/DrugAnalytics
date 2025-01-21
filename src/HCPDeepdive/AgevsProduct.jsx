@@ -12,7 +12,7 @@ const data = [
 const AgevsProduct = ({Hcp_Id}) => {
   const HcpMetrics = metricsData.find(HCP => HCP.HCP_id === Hcp_Id);
   return (
-    <div className="flex flex-col border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
+    <div className="flex flex-col border border-gray-300 rounded-xl w-full h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">Age vs Product Distribution</span>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={HcpMetrics.age_vs_prod} margin={{ top: 20, right: 20, left: 0 }}>

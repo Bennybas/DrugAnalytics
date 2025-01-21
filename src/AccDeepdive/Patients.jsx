@@ -15,7 +15,7 @@ const Patients = ({accountId}) => {
 
   const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
-    <div className="flex flex-col border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
+    <div className="flex flex-col border border-gray-300 rounded-xl w-full h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA Patients</span>
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart

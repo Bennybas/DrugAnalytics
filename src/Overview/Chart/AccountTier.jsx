@@ -11,7 +11,7 @@ const data = [
 
 const AccountTierChart = () => {
   return (
-    <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-[395px] h-56 p-2">
+    <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-full h-56 p-2">
       <div className="flex flex-col justify-start w-full py-1 ml-4">
         <span className="text-gray-700 text-sm mb-4">Account Tier (# Acc by Tier)</span>
       </div>

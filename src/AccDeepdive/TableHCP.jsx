@@ -35,7 +35,7 @@ const TableHCP = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-between w-[395px] h-60">
+    <div className="flex flex-col justify-between w-full h-60">
       <div className="border border-gray-300 rounded-xl overflow-hidden h-full">
         <table className="w-full h-full table-auto border-collapse">
           <thead>

@@ -12,7 +12,7 @@ const OverviewPage = () => {
         <OverviewHeader />
         <div className='p-4 ml-4'>
             <div className='flex gap-4 mt-2'>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-64 h-24 p-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 p-4">
                     {/* Left Section */}
                     <div className="flex flex-col justify-between h-full">
                         <span className="text-gray-700 text-sm">No. of Prescribers</span>
@@ -25,7 +25,7 @@ const OverviewPage = () => {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-64 h-24 p-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 p-4">
                     {/* Left Section */}
                     <div className="flex flex-col justify-between h-full">
                         <span className="text-gray-700 text-sm">Total Patients</span>
@@ -37,7 +37,7 @@ const OverviewPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-64 h-24 p-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 p-4">
                     {/* Left Section */}
                     <div className="flex flex-col justify-between h-full">
                         <span className="text-gray-700 text-sm">Treatment Centers</span>
@@ -49,7 +49,7 @@ const OverviewPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-64 h-24 p-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 p-4">
                     {/* Left Section */}
                     <div className="flex flex-col justify-between h-full">
                         <span className="text-gray-700 text-sm">Active Referals</span>
@@ -61,7 +61,7 @@ const OverviewPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-64 h-24 p-4">
+                <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 p-4">
                     {/* Left Section */}
                     <div className="flex flex-col justify-between h-full">
                         <span className="text-gray-700 text-sm" >Conversion Rate</span>
@@ -79,7 +79,7 @@ const OverviewPage = () => {
 
             {/* Second row */}
 
-            <div className='flex gap-4 mt-4'>
+            <div className='flex gap-4 mt-4 w-full'>
                 <AccountTierChart />
 
                 <Architype />

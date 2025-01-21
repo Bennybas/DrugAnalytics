@@ -96,7 +96,7 @@ const Specialty = ({accountId}) => {
   }, [accountMetrics]);
   
   return (
-    <div className="flex flex-col justify-between border border-gray-300 rounded-xl w-[395px] h-60 px-4 py-3">
+    <div className="flex flex-col justify-between border border-gray-300 rounded-xl w-full h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA Pats by Specialty</span>
       <div ref={chartDom} style={{ width: '100%', height: '90%' }} />
     </div>
