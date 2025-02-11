@@ -5,7 +5,7 @@ import metricsData from '../data/metrics.json'
 const HCPsegment = ({accountId}) => {
   const accountMetrics = metricsData.find(account => account.AccId === accountId);
   return (
-    <div className="flex flex-col justify-between border border-gray-300 rounded-xl w-full h-60 px-4 py-3">
+    <div className="flex flex-col border border-gray-300 rounded-xl w-full h-60 px-4 py-3">
       <span className="text-gray-700 text-sm mb-2">SMA by HCP Segment</span>
       <ResponsiveContainer width="100%" height="100%" >
         <BarChart

@@ -35,9 +35,8 @@ const TableHCP = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-between w-full h-60">
-      <div className="border border-gray-300 rounded-xl overflow-hidden h-full">
-        <table className="w-full h-full table-auto border-collapse">
+    <div className="flex flex-col justify-between h-60 w-full rounded-xl overflow-clip">
+        <table className="w-full h-full table-auto order border border-gray-300 rounded-xl ">
           <thead>
             <tr>
               <th className="bg-[#c98b27]/90 text-white p-2 text-[12px] text-left border border-gray-300">HCP Name</th>
@@ -57,7 +56,7 @@ const TableHCP = () => {
             ))}
           </tbody>
         </table>
-      </div>
+      
     </div>
   );
 };

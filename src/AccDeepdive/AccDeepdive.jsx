@@ -26,7 +26,7 @@ const AccDeepdive = ({accountId}) => {
         <div className='p-4 ml-4'>
             <div className='flex gap-3 mt-2'>
                 <div className="flex items-center justify-between border border-gray-300 rounded-xl w-full h-24 px-2 py-4">
-                    <div className="flex flex-col justify-between h-full w-full ml-1">
+                    <div className="flex flex-col justify-between h-full w-full ">
                         <span className="text-gray-700 text-[12px]">Account Size</span>
                         <div className="flex items-center space-x-1">
                             <span className="text-[15px] font-medium">{accountMetrics.metrics.find(m => m.name === "Account Size").value}</span>
@@ -125,24 +125,34 @@ const AccDeepdive = ({accountId}) => {
             {/* Second row */}
 
             <div className='flex gap-4 mt-6'>
+            <div className="flex-1">
                 <AccDetails accountId={CurrentID} />
-
+                </div>
+                <div className="flex-1">
                 <Patients accountId={CurrentID}/>
-
+                </div>
+                <div className="flex-1">
                 <TreatedPats  accountId={CurrentID}/>
+                </div>
             </div>
 
 
             {/* Third Row */}
 
-            <div className='flex gap-4 mt-6'>
-                <HCPsegment accountId={CurrentID} />
+            <div className='flex gap-4 mt-6 w-full'>
+                <div className="flex-1">
+                    <HCPsegment accountId={CurrentID} />
+                </div>
+                
+                <div className="flex-1">
+                    <Speciality accountId={CurrentID} />
+                </div>
+                
+                <div className="flex-1">
+                    <TableHCP />
+                </div>
+                </div>
 
-                <Speciality accountId={CurrentID}/>
-
-                <TableHCP />
-
-            </div>
 
 
             {/* Empty Space */}
