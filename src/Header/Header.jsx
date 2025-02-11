@@ -83,7 +83,7 @@ const Header = () => {
   return (
     <div>
       <div className="bg-grey-100 ">
-        <header className="bg-gradient-to-br from-[#9bc0e2]/50 to-[#9bc0e2]/90 text-gray-600 flex items-center justify-between px-6 py-3 border-b border-gray-200 shadow-md">
+        <header className="bg-[#9bc0e2]/90 text-gray-600 flex items-center justify-between px-6 py-3 border-b border-gray-200 shadow-md">
           {/* Logo Section */}
           <img src="/chryselys.png" alt="Logo" className="h-12 w-auto" />
 
