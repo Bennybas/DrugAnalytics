@@ -106,11 +106,11 @@ const RegionalMap = () => {
 
   // Table data
   const tableData = [
-    { region: "Alabama", accounts: "35004", patients: "628392" },
+    { region: "Alabama", accounts: "35004", patients: "35004" },
     { region: "Alaska", accounts: "99501", patients: "99501" },
     { region: "Arizona", accounts: "85001", patients: "85001" },
     { region: "Arkansas", accounts: "71601", patients: "71601" },
-    { region: "California", accounts: "79483", patients: "90001" },
+    { region: "California", accounts: "90001", patients: "90001" },
     { region: "Connecticut", accounts: "80001", patients: "80001" },
     { region: "Delaware", accounts: "06001", patients: "06001" },
     { region: "Florida", accounts: "19701", patients: "19701" },

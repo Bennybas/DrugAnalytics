@@ -111,7 +111,7 @@ const Architype = () => {
   return (
     <div className="flex flex-col items-start justify-between border border-gray-300 rounded-xl w-full h-56 p-1 ">
       <div className="flex flex-col justify-start w-full py-1 ml-4">
-        <span className="text-gray-700 text-sm mb-4">Account Archetype</span>
+        <span className="text-gray-700 text-sm mb-4">Account Archetype (# Acc by Archetype)</span>
       </div>
       {/* ECharts Pie Chart */}
       <div ref={chartDom} style={{ width: '100%', height: '80%' }} />
