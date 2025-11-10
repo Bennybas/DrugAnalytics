@@ -39,7 +39,7 @@ const AccountTierChart = () => {
         <Tooltip />
         <Bar
           dataKey="value"
-          fill="#447f9c"
+          fill="#0d365e"
           radius={[4, 4, 0, 0]}
         />
       </BarChart>
